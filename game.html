@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>game</title>
+</head>
+<body>
+    <script>
+        prompt ("Qual número de 0 à 100 eu estou pensando?") 
+
+        let numeroAleatorio = Math.random()*100;
+        let numeroAleatorioInteiro = Math.round(numeroAleatorio);
+        document.write(numeroAleatorioInteiro);
+
+        if(prompt == numeroAleatorioInteiro){
+            document.write("Parabéns, você consegiu!");
+        }else if (numeroAleatorioInteiro){
+            document.write("Puts, não foi dessa vez!" + numeroAleatorioInteiro);
+        }
+    
+    </script>
+</body>
+</html>

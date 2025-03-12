@@ -7,17 +7,26 @@
 </head>
 <body>
     <script>
-        prompt ("Qual número de 0 à 100 eu estou pensando?") 
+        let resposta = prompt ("Qual número de 0 à 10 eu estou pensando?") 
 
-        let numeroAleatorio = Math.random()*100;
-        let numeroAleatorioInteiro = Math.round(numeroAleatorio);
-        document.write(numeroAleatorioInteiro);
+        let numeroAleatorio = Math.random()*10;
+        let numeroAleatorioInteiro = Math.floor(numeroAleatorio);
 
-        if(prompt == numeroAleatorioInteiro){
-            document.write("Parabéns, você consegiu!");
-        }else if (numeroAleatorioInteiro){
-            document.write("Puts, não foi dessa vez!" + numeroAleatorioInteiro);
-        }
+        let resultado = (resposta >=1 && resposta <=10) ?
+                            (resposta == numeroAleatorioInteiro) ?
+                            "Parabéns, você conseguiu!":
+                            "Puts, não foi dessa vez!" + 
+                                numeroAleatorioInteiro + "!" : 
+                            "Número inválido."
+
+        document.write(resultado);
+
+        //if(resposta == numeroAleatorioInteiro){
+           // document.write("Parabéns, você consegiu!");
+        //}else if (numeroAleatorioInteiro){
+           //document.write("Puts, não foi dessa vez!" + numeroAleatorioInteiro);
+        //}
+
     
     </script>
 </body>

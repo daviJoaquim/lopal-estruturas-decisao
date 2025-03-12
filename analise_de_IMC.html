@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular e analisar IMC</title>
+</head>
+<body>
+    <script>
+
+         function escreverln(frase){
+            document.write(frase)
+
+         }
+         let peso = prompt ("Qual seu peso?")
+         let altura = prompt ("Qual sua altura?")
+         function IMC (peso, altura){
+            return peso/(altura*altura)
+       }
+       escreverln("Meu IMC é: " + IMC(60, 1.75))
+
+       if(IMC < 18.5 && IMC < 35){
+        document.write("peso ideal")
+       }else if(IMC >=35 && IMC, 40){
+        document.write("acima do ideal")
+       }
+    </script>
+    
+</body>
+</html>
